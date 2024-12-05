@@ -1,1 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets the character encoding for the email to UTF-8 to support special characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures the email is responsive on all devices, scaling content appropriately -->
+    <style>
+        /* Global styling for the email */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif; /* Sets a clean, web-safe font */
+            background-color: #f4f4f4; /* Light gray background for contrast */
+        }
 
+        /* Wrapper that contains the email's content */
+        .email-wrapper {
+            max-width: 600px; /* Sets a maximum width for the email */
+            margin: 0 auto; /* Centers the email in the viewport */
+            background-color: #ffffff; /* White background for the email content */
+            border-radius: 10px; /* Rounds the corners for a modern design */
+            overflow: hidden; /* Ensures content doesn't overflow the container */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+        }
+
+        /* Header section styles */
+        .header {
+            background-color: #1e1e2f; /* Dark background for the header */
+            color: #ffffff; /* White text for contrast */
+            text-align: center; /* Centers the content */
+            padding: 20px 15px; /* Adds padding inside the header */
+        }
+        .header h1 {
+            margin: 10px 0; /* Adds spacing above and below the heading */
+            font-size: 28px; /* Sets a larger font size for prominence */
+        }
+        .subheader {
+            color: #ff6600; /* Orange color for emphasis */
+            font-size: 16px; /* Smaller font size for the subtitle */
+            margin-top: 10px; /* Adds spacing above the subtitle */
+        }
+
+        /* Main content styles */
+        .main-content {
+            padding: 20px; /* Adds space inside the content container */
+            line-height: 1.6; /* Improves readability by increasing line spacing */
+            color: #333333; /* Dark gray text for high contrast and readability */
+        }
+        .main-content h2 {
+            color: #ff6600; /* Orange heading to draw attention */
+            font-size: 22px; /* Slightly smaller than the header */
+            margin-top: 0; /* Removes default top margin for better spacing */
+        }
+
+        /* Styles for the feature boxes */
+        .features {
+            display: flex; /* Creates a flexible layout for the feature items */
+            flex-wrap: wrap; /* Ensures items wrap on smaller screens */
+            gap: 10px; /* Adds space between feature boxes */
+            margin: 20px 0; /* Adds spacing above and below the feature section */
+        }
+        .feature {
+            flex: 1 1 48%; /* Each box takes up 48% of the width (two per row) */
+            background: #f7f7f7; /* Light gray background for contrast */
+            padding: 15px; /* Adds space inside the boxes */
+            border-radius: 5px; /* Rounds the corners for a softer look */
+            text-align: center; /* Centers the text inside each box */
+        }
+        .feature h3 {
+            color: #333333; /* Dark gray for headings */
+            font-size: 16px; /* Smaller font for feature titles */
+        }
+
+        /* Call-to-action button styles */
+        .cta {
+            text-align: center; /* Centers the button */
+            margin-top: 20px; /* Adds spacing above the button */
+        }
+        .cta a {
+            background-color: #ff6600; /* Orange button background */
+            color: #ffffff; /* White text for contrast */
+            text-decoration: none; /* Removes underline from the link */
+            padding: 10px 25px; /* Adds space inside the button */
+            border-radius: 5px; /* Rounds the button corners */
+            font-weight: bold; /* Makes the text bold for emphasis */
+            font-size: 16px; /* Sets a readable font size */
+        }
+        .cta a:hover {
+            background-color: #e65c00; /* Darkens the button on hover */
+        }
+
+        /* Footer section styles */
+        .footer {
+            background-color: #1e1e2f; /* Matches the header's dark background */
+            color: #cccccc; /* Light gray text for subtle contrast */
+            text-align: center; /* Centers the footer text */
+            font-size: 12px; /* Smaller font for less prominent content */
+            padding: 15px; /* Adds space inside the footer */
+        }
+    </style>
+</head>
+<body>
+    <div class="email-wrapper">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Grow Your Insurance Agency</h1> <!-- Main headline of the email -->
+            <p class="subheader">Tech Solutions | Exclusive Resources | Automation</p> <!-- Supporting tagline -->
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <h2>Revolutionize How You Do Business</h2> <!-- Section headline -->
+            <p>Discover how First Connect Insurance Services empowers agents like you to achieve extraordinary growth through cutting-edge tools and top-tier partnerships.</p>
+            <!-- Introductory content -->
+
+            <div class="features">
+                <!-- Features section with individual boxes -->
+                <div class="feature">
+                    <h3>🔍 Find New Opportunities</h3>
+                    <p>Access exclusive P&C products from leading Insurtech platforms.</p>
+                </div>
+                <div class="feature">
+                    <h3>💡 Automate Workflows</h3>
+                    <p>Save time with intuitive, automation-ready tools.</p>
+                </div>
+                <div class="feature">
+                    <h3>📊 Data Insights</h3>
+                    <p>Make smarter decisions with actionable analytics.</p>
+                </div>
+                <div class="feature">
+                    <h3>🤝 Grow Together</h3>
+                    <p>Connect with $2B+ invested Insurtech providers.</p>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="cta">
+                <a href="https://firstconnectinsurance.com" target="_blank">Start Your Journey Today</a>
+                <!-- Button that links to the main website -->
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <p>First Connect Insurance Services, Austin, TX</p> <!-- Footer content -->
+            <p><a href="#" style="color: #ff6600;">Unsubscribe</a> | <a href="#" style="color: #ff6600;">Privacy Policy</a></p>
+            <!-- Links for unsubscribing and privacy policies -->
+        </div>
+    </div>
+</body>
+</html>
